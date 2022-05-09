@@ -13,8 +13,8 @@
     <div class="nav">
         <p><a href="index.html" id="brand_logo">Chai</a></p>
         <div class="right-side-nav">
-            <a href="#">know us</a>
-            <a href="#">NEARBY Branch</a> 
+            <a href="Know_us.html">know us</a>
+            <a href="nearby_branch.html">NEARBY Branch</a> 
         </div>
     </div>
     <div class="first_view">
@@ -25,7 +25,7 @@
             </div>
             <div class="join-us-form">
                 
-                <form action="connect.php" method="post">
+                <form action="connect.php" method="post" onsubmit="validateForm()">
                     <p>Register Yourself <br> To Be a part of <span id="form-chai">Chai</span> chain</p>
                     <div class="stylish-input">
                         <input type="text" name="name" autocomplete="off" maxlength="50" required>
@@ -40,7 +40,7 @@
                         </label>
                     </div>
                     <div class="stylish-input">
-                        <input type="text" name="mobile" maxlength="10" required>
+                        <input id="mobile_no" type="text" name="mobile" maxlength="10" required>
                         <label for="mobile" class="label-name">
                             <span class="content">Mobile Number</span>
                         </label>
@@ -221,6 +221,6 @@
     </div>
     
     
-    
+    <script src="validation.js" type="text/javascript"></script>
 </body>
 </html>
